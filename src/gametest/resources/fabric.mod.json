@@ -1,0 +1,15 @@
+{
+	"schemaVersion": 1,
+	"id": "infiniteoneblocks-test",
+	"version": "1.0.0",
+	"name": "Infinite One Blocks Tests",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-client-gametest": [
+			"com.kovix.infiniteoneblocks.test.LineClientGameTest"
+		]
+	},
+	"depends": {
+		"infiniteoneblocks": "*"
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "infiniteoneblocks",
+	"version": "${version}",
+	"name": "Infinite One Blocks",
+	"description": "Void world with a single line of every Minecraft block. Each block is an infinite one block: break it and it drops itself as an item, then instantly regenerates.",
+	"authors": [
+		"kovix"
+	],
+	"license": "CC0-1.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.kovix.infiniteoneblocks.InfiniteOneBlocks"
+		],
+		"client": [
+			"com.kovix.infiniteoneblocks.client.InfiniteOneBlocksClient"
+		]
+	},
+	"mixins": [
+		"infiniteoneblocks.mixins.json",
+		{
+			"config": "infiniteoneblocks.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
